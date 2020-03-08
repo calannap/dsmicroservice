@@ -24,5 +24,10 @@ class PredictHandler(GenericHandler):
                              loss='sparse_categorical_crossentropy',
                              metrics=['accuracy'])
 
-        score = loaded_model.predict(image)
-        return score
+        score = loaded_model.predict(message['image'])
+
+        data = {'message': {
+            'score': score
+        }, 'metadata_type': 'image_scores'}
+
+        self.write_message(data)
