@@ -5,7 +5,7 @@ from generic_handler import GenericHandler
 
 class TrainHandler(GenericHandler):
 
-    def __init__(self, config, database):
+    def __init__(self, config):
         super(TrainHandler, self).__init__(config)
 
     def handle(self, message):

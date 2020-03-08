@@ -4,7 +4,7 @@ from generic_handler import GenericHandler
 
 class PredictHandler(GenericHandler):
 
-    def __init__(self, config, database):
+    def __init__(self, config):
         super(PredictHandler, self).__init__(config)
 
 
