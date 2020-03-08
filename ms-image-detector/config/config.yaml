@@ -1,0 +1,13 @@
+---
+paths:
+  video_folder: '../../video/'
+  model_json: '../resources/model.h5'
+  model_h5: '../resources/model.json'
+
+
+kafka:
+  input_topic: 'IMAGES'
+  output_topic: 'OUTPUT'
+  bootstrap_servers: '172.1.1.3:9094'
+  group_id: 'object'
+...
